@@ -5,8 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="rps.css">
 </head>
 <body>
-    <script src = "script.js"></script>
+    
+<h1><center>THE ROCK-PAPER-SCISSORS GAME</center></h1>
+<div id="myNav" class="overlay">
+  <div id="overlay-content"></div>
+  <button id="closeBtn" onclick="location.reload()">Play Again!</button>
+</div>
+<div id="page">
+ <div class="mid">
+    <div class="mid1">
+        <div id="ply">PLAYER</div>
+        
+            <button class="topbtn" id="tpOne"  onclick="playARound('ROCK')">ROCK</button>
+            <button class="topbtn" id="tpTwo"  onclick="playARound('PAPER')">PAPER</button>
+            <button class="topbtn" id="tpThree" onclick="playARound('SCISSORS')">SCISSORS</button>
+        
+    </div>
+    <div class="mid2">
+      <div>COMPUTER</div>
+      <textarea name="text" rows="1" cols="8" wrap="soft" maxlength="8" id="comBtn"></textarea>
+    </div>
+    <div class="mid3">
+    <div>ROUND RESULT</div>
+    <textarea name="text" rows="5" cols="25" wrap="soft" maxlength="40" id="comment"></textarea>
+    </div>
+ </div>
+ 
+ <div class="footer">
+ <center> 
+  <h3> SCORE BOARD</h3>
+  <div class="boardGroup">
+    <div class="plyr">
+      <div>PLAYER</div>
+      <textarea name="text" rows="1" cols="1" wrap="soft" maxlength="1" id="plyScore"></textarea>
+    </div>
+    <div class="compr">
+      <div>COMPUTER</div>
+      <textarea name="text" rows="1" cols="1" wrap="soft" maxlength="1" id="compScore"></textarea>
+    </div>
+  </div>
+ </center>
+ </div> 
+</div>
+<script src = "script.js"></script>
 </body>
 </html>
+
