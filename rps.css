@@ -129,3 +129,12 @@ h1{
    border-width: 3px;
    text-align: center;
 }
+
+ @media screen and (
+   max-device-width : 480px
+) {body{
+   margin-top: 500px;
+}
+
+}
+
